@@ -2,7 +2,7 @@ import {defineStore} from 'pinia'
 
 export const useStore = defineStore('main', {
     state: () => {
-        return{
+        return {
             products: [
                 {
                     "id": 1,

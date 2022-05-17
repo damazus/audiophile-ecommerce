@@ -1,6 +1,7 @@
 <script>
-import { mapState } from 'pinia'
+import { mapState, mapActions } from 'pinia'
 import { useStore } from './store/main'
+import { useCart } from './store/cart'
 import Numbers from './components/Numbers.vue'
 import CategoryItems from './components/CategoryItems.vue'
 import BringingBest from './components/BringingBest.vue'
@@ -26,7 +27,9 @@ export default{
     }
   },
   methods: {
+    ...mapActions(useCart, {addToCart: 'add'}),
     showCart(){
+      this.addToCart({product: this.product, quantity: this.quantity})
       this.isShowCart = !this.isShowCart
     }
   }
@@ -35,7 +38,7 @@ export default{
 
 
 <template>
-  <Cart/>
+  <Cart v-if="isShowCart" @close="() => isShowCart = false"/>
   <div class="product-details">
     <div class="section">
       <div class="container">

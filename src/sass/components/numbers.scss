@@ -1,19 +1,23 @@
 .numbers{
+  --button-size: 48px;
+
   display: inline-flex;
   align-items: center;
   background: var(--gray10);
+
+  &.numbers--mini{
+    --button-size: 32px;
+  }
 }
 
 .numbers__btn{
-  --size: 48px;
-
   @include button-reset;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--size);
-  height: var(--size);
+  width: var(--button-size);
+  height: var(--button-size);
 
   color: rgba(0, 0, 0, 0.25);
   background: var(--gray10);

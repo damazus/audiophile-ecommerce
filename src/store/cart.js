@@ -2,16 +2,26 @@ import {defineStore} from 'pinia'
 
 export const useCart = defineStore('cart', {
     state: () => {
-        return{
-            products: [0, 1]
+        return {
+            carts: []
         }
     },
     getters: {
-        products(state){
-            return state.products
-        },
+        total(){
+            return this.carts.length
+                ? this.carts.map((cart) => (cart.product.price * cart.quantity)).reduce((accumulator, curr) => (accumulator + curr))
+                : 0
+        }
     },
     actions: {
+        add(cart){
+            this.carts.push(cart)
+        },
+        removeAll(){
+            this.carts = []
+        },
+        updateQuantity({product, quantity}){
 
+        }
     }
 })

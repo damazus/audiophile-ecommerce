@@ -22,3 +22,38 @@
 .main{
   flex: 1;
 }
+
+.form-label{
+  display: inline-block;
+  width: 100%;
+}
+
+.form-label > span{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.form-control{
+  height: 56px;
+  border: 1px solid #CFCFCF;
+  border-radius: 8px;
+}
+
+.form-custom__section:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.form-custom__section-title{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  color: var(--orange80);
+  margin-bottom: 15px;
+}

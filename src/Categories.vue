@@ -12,13 +12,16 @@ export default {
     BringingBest,
   },
   computed: {
-    ...mapState(useStore, ['productsByCategory']),
+    ...mapState(useStore, ['productsByCategory', 'products']),
     slug(){
       return this.$route.params.slug
     },
     products(){
       return this.productsByCategory(this.slug)
     }
+  },
+  mounted() {
+    console.log(this.products)
   }
 }
 </script>
