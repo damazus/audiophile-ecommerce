@@ -1,0 +1,15 @@
+.header{
+  display: flex;
+  align-items: center;
+  background: var(--black);
+}
+
+.header__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 96px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 15px;
+}
+

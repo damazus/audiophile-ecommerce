@@ -1,0 +1,27 @@
+.product-pill.product-pill--reverse{
+  .product-pill__body{
+    flex-direction: row-reverse;
+  }
+}
+
+.product-pill__main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-pill__info{
+  @include subtitle;
+
+  color: var(--orange80);
+}
+
+.product-pill__title{
+  @include h2;
+}
+
+.product-pill__content{
+  @include paragraph-black;
+  margin-bottom: 35px;
+}

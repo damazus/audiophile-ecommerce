@@ -1,0 +1,15 @@
+.page-header{
+  color: var(--white);
+  background: var(--black);
+}
+
+.page-header__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+.page-header__title{
+  @include h1;
+}

@@ -1,0 +1,19 @@
+.navigation-menu{
+  display: flex;
+  align-items: center;
+}
+
+.navigation-menu__link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  padding: 8px 10px;
+  color: var(--white);
+
+  &:hover{
+    text-decoration: none;
+    color: var(--orange80);
+  }
+}

@@ -1,0 +1,209 @@
+//region section
+.section{
+  padding: 180px 0 0;
+}
+
+.section__title{
+  @include h3;
+  text-align: center;
+}
+//endregion section
+
+//region hero
+.hero{
+  display: flex;
+  align-items: center;
+  height: 729px;
+  color: #FFF;
+  background-color: var(--black);
+}
+
+.hero__inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero__sub-title{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.hero__title{
+  @include h1;
+
+  color: var(--white);
+  margin-bottom: 15px;
+
+  span{
+    display: block;
+  }
+}
+
+.hero__content{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.75;
+  margin-bottom: 40px;
+}
+//endregion hero
+
+//region categories
+.home-category{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 90px 20px 20px;
+  border-radius: 8px;
+  background: var(--gray10);
+}
+
+.home-category__image{
+  align-self: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+}
+
+.home-category__title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+//endregion categories
+
+//region premium-product
+.premium-product{
+  border-radius: 8px;
+  height: 560px;
+  padding-top: 110px;
+  margin-bottom: 50px;
+  overflow: hidden;
+
+  color: var(--white);
+  background-color: var(--orange80);
+  background-image: url(home/desktop/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: -150px -10px;
+}
+
+.premium-product__image{
+  max-width: 380px;
+  margin-bottom: -12px;
+}
+
+.premium-product__col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.premium-product__col--illustration{
+    align-items: center;
+  }
+
+  &.premium-product__col--description{
+    align-items: center;
+  }
+}
+
+.premium-production__description-wrapper{
+  max-width: 349px;
+}
+
+.premium-production__title{
+  @include h1;
+  margin-bottom: 25px;
+}
+
+.premium-production__content{
+  @include paragraph;
+  margin-bottom: 30px;
+}
+//endregion premium-product
+
+//region home-speaker
+.home-speaker{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 320px;
+  border-radius: 8px;
+  padding: 0 66px;
+  margin-bottom: 50px;
+  background-image: url("home/desktop/image-speaker-zx7.jpg");
+}
+
+.home-speaker__title{
+  @include h4;
+  margin-bottom: 35px;
+}
+//endregion home-speaker
+
+//region home-earphone
+.home-earphone__main{
+  display: flex;
+}
+
+.home-earphone__image,
+.home-earphone__main-inner{
+  border-radius: 8px;
+}
+
+.home-earphone__main-inner{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 0 88px;
+  background: var(--gray10);
+}
+
+.home-earphone__title{
+  @include h4;
+
+  margin-bottom: 35px;
+}
+//endregion home-earphone
+
+//region bringing-best
+.bringing-best__about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bringing-best__title{
+  @include h2;
+
+  margin-bottom: 35px;
+
+  strong{
+    color: var(--orange80);
+  }
+}
+
+.bringing-best__content{
+  @include paragraph;
+
+  padding-right: 70px;
+  color: var(--black);
+  opacity: 0.5;
+}
+//endregion bringing-best
